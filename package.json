@@ -1,0 +1,48 @@
+{
+	"name": "has-yarn-cli",
+	"version": "0.0.0",
+	"description": "Check if a project is using Yarn",
+	"license": "MIT",
+	"repository": "sindresorhus/has-yarn-cli",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": {
+		"has-yarn": "cli.js"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"yarn",
+		"has",
+		"detect",
+		"is",
+		"project",
+		"app",
+		"module",
+		"package",
+		"manager",
+		"npm"
+	],
+	"dependencies": {
+		"has-yarn": "^1.0.0",
+		"log-symbols": "^2.2.0",
+		"meow": "^5.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.2.1",
+		"execa": "^1.0.0",
+		"xo": "^0.24.0"
+	}
+}
