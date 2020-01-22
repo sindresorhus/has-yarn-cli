@@ -4,18 +4,34 @@ const meow = require('meow');
 const hasYarn = require('has-yarn');
 const logSymbols = require('log-symbols');
 
-meow(`
+const {flags} = meow(`
 	Usage
 	  $ has-yarn
 	  ✔ This project uses Yarn
 
+	Options
+	  --quiet, -q
+
 	Exits with code 0 if the project uses Yarn, otherwise code 2
-`);
+`, {
+	flags: {
+		quiet: {
+			type: 'boolean',
+			alias: 'q'
+		}
+	}
+});
 
 if (hasYarn()) {
-	console.log(`${logSymbols.success} This project uses Yarn`);
+	if (!flags.quiet) {
+		console.log(`${logSymbols.success} This project uses Yarn`);
+	}
+
 	process.exit(0);
 } else {
-	console.log(`${logSymbols.error} This project does not use Yarn`);
+	if (!flags.quiet) {
+		console.log(`${logSymbols.error} This project does not use Yarn`);
+	}
+
 	process.exit(2);
 }
