@@ -10,14 +10,13 @@ const {flags} = meow(`
 	  ✔ This project uses Yarn
 
 	Options
-	  --quiet, -q
+	  --quiet		Silence output (useful for scripts)
 
 	Exits with code 0 if the project uses Yarn, otherwise code 2
 `, {
 	flags: {
 		quiet: {
-			type: 'boolean',
-			alias: 'q'
+			type: 'boolean'
 		}
 	}
 });
