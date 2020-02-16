@@ -4,6 +4,7 @@
 	"description": "Check if a project is using Yarn",
 	"license": "MIT",
 	"repository": "sindresorhus/has-yarn-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
