@@ -15,12 +15,16 @@ $ npm install --global has-yarn-cli
 ```
 $ has-yarn --help
 
+  Check if a project is using Yarn
+
   Usage
     $ has-yarn
     ✔ This project uses Yarn
 
-  Exits with code 0 if the project uses Yarn, otherwise code 2
-```
+  Options
+    --quiet		Silence output (useful for scripts)
+
+  Exits with code 0 if the project uses Yarn, otherwise code 2```
 
 
 ## Related
