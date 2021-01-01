@@ -1,4 +1,4 @@
-# has-yarn-cli [![Build Status](https://travis-ci.com/sindresorhus/has-yarn-cli.svg?branch=master)](https://travis-ci.com/sindresorhus/has-yarn-cli)
+# has-yarn-cli
 
 > Check if a project is using [Yarn](https://yarnpkg.com)
 
