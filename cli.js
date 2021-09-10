@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const hasYarn = require('has-yarn');
-const logSymbols = require('log-symbols');
+import process from 'node:process';
+import meow from 'meow';
+import hasYarn from 'has-yarn';
+import logSymbols from 'log-symbols';
 
 const {flags} = meow(`
 	Usage
@@ -14,11 +14,12 @@ const {flags} = meow(`
 
 	Exits with code 0 if the project uses Yarn, otherwise code 2
 `, {
+	importMeta: import.meta,
 	flags: {
 		quiet: {
-			type: 'boolean'
-		}
-	}
+			type: 'boolean',
+		},
+	},
 });
 
 if (hasYarn()) {

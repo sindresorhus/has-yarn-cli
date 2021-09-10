@@ -23,7 +23,6 @@ $ has-yarn --help
   Exits with code 0 if the project uses Yarn, otherwise code 2
 ```
 
-
 ## Related
 
 - [has-yarn](https://github.com/sindresorhus/has-yarn) - API for this module
