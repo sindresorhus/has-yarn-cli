@@ -2,10 +2,12 @@
 
 > Check if a project is using [Yarn](https://yarnpkg.com)
 
+It checks for a `yarn.lock` file in the given directory or any of its parent directories (useful for Yarn workspaces).
+
 ## Install
 
-```
-$ npm install --global has-yarn-cli
+```sh
+npm install --global has-yarn-cli
 ```
 
 ## Usage
@@ -25,4 +27,4 @@ $ has-yarn --help
 
 ## Related
 
-- [has-yarn](https://github.com/sindresorhus/has-yarn) - API for this module
+- [has-yarn](https://github.com/sindresorhus/has-yarn) - API for this package
